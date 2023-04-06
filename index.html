@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hotel Booking System</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Hotel Booking System</h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./booking.html">Bookings</a></li>
+        </ul>
+      </nav>
+
+      <form class="search-form">
+        <input type="text" placeholder="Search for available rooms..." />
+        <button type="submit">Search</button>
+      </form>
+    </header>
+
+    <main>
+      <section class="rooms">
+        <!-- <h2>Our Rooms</h2> -->
+
+        <div class="room-list">
+          <div class="room">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://images.unsplash.com/photo-1596386461350-326ccb383e9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=813&q=80"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="room-name">single room</h5>
+                <p class="card-text">$100 / night</p>
+                <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="room">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://images.unsplash.com/photo-1596386461350-326ccb383e9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=813&q=80"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="room-name">Double room</h5>
+                <p class="card-text">$150 / night</p>
+                <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="room">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://images.unsplash.com/photo-1596386461350-326ccb383e9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=813&q=80"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="room-name">Family room</h5>
+                <p class="card-text">$200 / night</p>
+                <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- form -->
+      <section id="hero">
+        <div class="container">
+          <div class="hero-content"></div>
+          <div class="booking-form-wrapper">
+            <form id="booking-form">
+              <h2>Make a Booking</h2>
+              <div class="form-group">
+                <label for="check-in">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required />
+              </div>
+              <div class="form-group">
+                <label for="check-in">Email:</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="check-in">Check In:</label>
+                <input type="date" id="check-in" name="check-in" required />
+              </div>
+
+              <div class="form-group">
+                <label for="check-out">Check Out:</label>
+                <input type="date" id="check-out" name="check-out" required />
+              </div>
+              <div class="form-group">
+                <label for="room-type">Room Type:</label>
+                <select id="room-type" name="room-type" required>
+                  <option value="">--Please select--</option>
+                  <option value="single">Single Room</option>
+                  <option value="double">Double Room</option>
+                  <option value="suite">Suite</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="guests">Number of Guests:</label>
+                <input
+                  type="number"
+                  id="guests"
+                  name="guests"
+                  min="1"
+                  required
+                />
+              </div>
+              <button type="submit">Book Now</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>About Us</h3>
+            <p>
+              We are a leading provider of hotel booking services, offering a
+              wide selection of hotels and accommodations around the world.
+            </p>
+          </div>
+          <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="fa fa-map-marker"></i>123 Main Street, Anytown</li>
+              <li><i class="fa fa-phone"></i>(254) 555-1234</li>
+              <li><i class="fa fa-envelope"></i>info@hotelbookingsystem.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Hotel Booking System. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
